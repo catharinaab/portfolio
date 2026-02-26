@@ -1,40 +1,125 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Catharina Alves | Portfólio</title>
   </head>
-  <body>
-  <!-- ===== HEADER / NAVBAR ===== -->
-        <header id="page-reception">     
-                <h1>MEU PORT<span>FÓLIO</span></h1>
-                <nav>
-                    <ul class="menu">
-                      <li><a href="#home">Sobre Mim</a></li>
-                      <li><a href="#skills">Habilidades</a></li>
-                      <li><a href="#experiences">Experiências</a></li>
-                      <li><a href="#projects">Projetos</a></li>
-                      <li><a href="#contactme">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>    
-          </header>
 
-    <main>
-      <section id="home">
+  <body class="scroll-smooth">
 
-      </section>
+    <!-- NAVBAR -->
+<header class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center p-5">
 
-    </main>
+    <h1 class="text-3xl font-bold">
+      Catharina<span class="highlight">.</span>
+    </h1>
 
-
-
-
-
+    <ul class="hidden md:flex gap-8 text-gray-300 items-center">
     
+    <ul class="flex gap-8 text-white font-medium">
+      <li><a href="#about-me" class="hover:text-purple-400 transition">Sobre mim</a></li>
+      <li><a href="#projects" class="hover:text-purple-400 transition">Projetos</a></li>
+      <li><a href="#contact" class="hover:text-purple-400 transition">Contato</a></li>
+    </ul>
 
-    <script type="module" src="/main.js"></script>
+    <!-- Ícone da casinha na direita -->
+    <a href="#home" class="text-white text-xl hover:text-purple-400 transition">
+      <i class="fa-solid fa-house"></i>
+    </a>
+
+  </nav>
+</header>
+
+    <!-- HERO -->
+    <section id="home" class="min-h-screen flex items-center">
+      <div class="container-default grid md:grid-cols-2 gap-12 items-center">
+
+        <div>
+          <p class="text-gray-400 mb-2">Olá, eu sou</p>
+
+          <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+            Catharina <br />
+            <span class="highlight">Alves Bonella</span>
+          </h2>
+
+          <p class="mt-6 text-gray-300 text-lg">
+            Desenvolvedora Web Jr. apaixonada por criar interfaces modernas,
+            funcionais e experiências digitais envolventes.
+          </p>
+
+          <p class="mt-2 text-gray-500">
+            📍 Vitória - ES
+          </p>
+
+          <div class="mt-8 flex gap-4">
+            <a href="#about" class="btn-primary">
+              Sobre mim
+            </a>
+
+            <a href="#projects" class="btn-outline">
+              Ver Projetos
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg shadow-blue-500/30">
+            <img 
+              src="/sua-foto.jpg" 
+              alt="Foto de Catharina" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section-spacing">
+  <div class="container-default grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- TEXTO -->
+    <div>
+      <h2 class="section-title">
+        Sobre <span class="highlight">Mim</span>
+      </h2>
+
+      <p class="about-text">
+        Sou desenvolvedora web em início de carreira, apaixonada por 
+        criar interfaces modernas e experiências digitais intuitivas.
+        Tenho forte interesse em Front-End, Design UI/UX e desenvolvimento
+        de aplicações responsivas.
+      </p>
+
+      <p class="about-text mt-4">
+        Atualmente estou aprofundando meus conhecimentos em HTML, CSS,
+        JavaScript e React, buscando evoluir tecnicamente e conquistar
+        minha primeira oportunidade profissional na área.
+      </p>
+    </div>
+
+    <!-- HABILIDADES -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-6">
+        Tecnologias & Habilidades
+      </h3>
+
+      <div class="flex flex-wrap gap-4">
+        <span class="skill-badge">HTML</span>
+        <span class="skill-badge">CSS</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">React</span>
+        <span class="skill-badge">Tailwind</span>
+        <span class="skill-badge">UI/UX</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <script type="module" src="/src/main.js"></script>
   </body>
 </html>
