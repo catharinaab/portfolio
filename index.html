@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <title>Catharina Alves | Portfólio</title>
   </head>
 
-  <body class="scroll-smooth">
+  <body>
 
     <!-- NAVBAR -->
 <header class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50">
@@ -16,25 +18,26 @@
     <h1 class="text-3xl font-bold">
       Catharina<span class="highlight">.</span>
     </h1>
-
-    <ul class="hidden md:flex gap-8 text-gray-300 items-center">
     
-    <ul class="flex gap-8 text-white font-medium">
-      <li><a href="#about-me" class="hover:text-purple-400 transition">Sobre mim</a></li>
-      <li><a href="#projects" class="hover:text-purple-400 transition">Projetos</a></li>
-      <li><a href="#contact" class="hover:text-purple-400 transition">Contato</a></li>
-    </ul>
+    <div class="flex items-center gap-8"> 
 
-    <!-- Ícone da casinha na direita -->
-    <a href="#home" class="text-white text-xl hover:text-purple-400 transition">
-      <i class="fa-solid fa-house"></i>
-    </a>
-
+      <ul class="hidden md:flex gap-8 text-gray-300 items-center font-medium">
+        <li><a href="#about-me" class="hover:text-blue-400 transition">Sobre mim</a></li>
+        <li><a href="#projects" class="hover:text-blue-400 transition">Projetos</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition">Contato</a></li>
+      </ul>
+      
+      <!-- ÍCONE CASINHA -->
+      <a href="#home" class="text-white text-xl hover:text-blue-400 transition">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </div>
+      
   </nav>
 </header>
 
-    <!-- HERO -->
-    <section id="home" class="min-h-screen flex items-center">
+      <!-- HERO -->
+    <section id="home" class="min-h-screen flex items-center scroll-mt-24">
       <div class="container-default grid md:grid-cols-2 gap-12 items-center">
 
         <div>
@@ -55,7 +58,7 @@
           </p>
 
           <div class="mt-8 flex gap-4">
-            <a href="#about" class="btn-primary">
+            <a href="#about-me" class="btn-primary">
               Sobre mim
             </a>
 
@@ -68,9 +71,9 @@
         <div class="flex justify-center">
           <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg shadow-blue-500/30">
             <img 
-              src="/sua-foto.jpg" 
+              src="/public/assets/minha_foto1.jpg" 
               alt="Foto de Catharina" 
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover object-[60%_1%]"
             />
           </div>
         </div>
@@ -78,47 +81,294 @@
       </div>
     </section>
 
-    <section id="about" class="section-spacing">
+    <!-- SOBRE MIM -->
+    <section id="about-me" class="section-spacing scroll-mt-24">
   <div class="container-default grid md:grid-cols-2 gap-12 items-center">
 
-    <!-- TEXTO -->
     <div>
       <h2 class="section-title">
         Sobre <span class="highlight">Mim</span>
       </h2>
 
       <p class="about-text">
-        Sou desenvolvedora web em início de carreira, apaixonada por 
-        criar interfaces modernas e experiências digitais intuitivas.
-        Tenho forte interesse em Front-End, Design UI/UX e desenvolvimento
-        de aplicações responsivas.
+        Sou desenvolvedora web em início de carreira, apaixonada por por jogos e pelo universo da tecnologia. Fascinada por entender como as coisas funcionam por trás das telas. Com o tempo, descobri que minha verdadeira afinidade está no desenvolvimento de projetos web, onde posso unir lógica e criatividade para transformar ideias em algo visual e interativo. Possuo grande interesse na área de UX/UI e de engenharia de software, pois acredito que o design, a experiência do usuário, as metodologias e o ciclo de vida são partes essenciais de qualquer projeto bem construído.
       </p>
 
       <p class="about-text mt-4">
-        Atualmente estou aprofundando meus conhecimentos em HTML, CSS,
-        JavaScript e React, buscando evoluir tecnicamente e conquistar
-        minha primeira oportunidade profissional na área.
+        Front-end e expandindo meus conhecimentos no Back-end por meio de cursos e prática. Cada novo aprendizado me motiva ainda mais a continuar evoluindo como desenvolvedora. Meu maior objetivo é me aperfeiçoar cada vez mais na minha área e crescer profissionalmente. Quero ser a melhor versão de mim mesma e construir uma carreira sólida como Desenvolvedora, criando soluções que unam técnica, propósito e criatividade.
       </p>
     </div>
 
     <!-- HABILIDADES -->
-    <div>
-      <h3 class="text-2xl font-semibold mb-6">
-        Tecnologias & Habilidades
-      </h3>
+<div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">
+      <span class="highlight">Tecno</span>logias & <span class="highlight">Habili</span>dades
+    </h2>
 
-      <div class="flex flex-wrap gap-4">
-        <span class="skill-badge">HTML</span>
-        <span class="skill-badge">CSS</span>
-        <span class="skill-badge">JavaScript</span>
-        <span class="skill-badge">React</span>
-        <span class="skill-badge">Tailwind</span>
-        <span class="skill-badge">UI/UX</span>
+    <!-- FRONT-END -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold mb-6 text-white-400">Front-end</h3>
+      
+<div class="grid grid-cols-2 md:grid-cols-5 gap-12 text-center">
+  <div class="group relative flex flex-col items-center">
+    <i class="devicon-html5-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+    <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">HTML</span>
+  </div>
+
+  <div class="group relative flex flex-col items-center">
+    <i class="devicon-css3-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+    <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">CSS</span>
+  </div>
+
+  <div class="group relative flex flex-col items-center">
+    <i class="devicon-javascript-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+    <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">JavaScript</span>
+  </div>
+
+  <div class="group relative flex flex-col items-center">
+    <i class="devicon-tailwindcss-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+    <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">Tailwind</span>
+  </div>
+
+  <div class="group relative flex flex-col items-center">
+    <i class="devicon-react-original colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+    <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">React</span>
+  </div>
+
+</div>
+    </div>
+
+    <!-- BACK-END -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold mb-6 text-white-400">Back-end</h3>
+      
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center text-5xl">
+        <div class="group relative flex flex-col items-center">
+          <i class="devicon-nodejs-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+          <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">Node Js.</span>
+        </div>
+        
+        <div class="group relative flex flex-col items-center">
+          <i class="devicon-python-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+          <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">Python</span>
+        </div>
+
+        <div class="group relative flex flex-col items-center">
+          <i class="devicon-java-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+          <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">Java</span>
+        </div>
+
+        <div class="group relative flex flex-col items-center">
+          <i class="devicon-web3js-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+          <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">Web3</span>
+        </div>
+
+        <div class="group relative flex flex-col items-center">
+          <i class="devicon-mysql-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+          <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">mySQL</span>
+        </div>  
+      </div> 
+    </div>
+
+    <!-- DESIGN & FERRAMENTAS -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold mb-6 text-white-400">Design, Prototipagem & IDE</h3>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center text-5xl">
+        <div class="group relative flex flex-col items-center">
+          <i class="devicon-figma-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+          <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">Figma</span>
+        </div>        
+
+        <div class="group relative flex flex-col items-center">
+          <i class="devicon-vscode-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+          <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">VSCode</span>
+        </div>
+
+        <div class="group relative flex flex-col items-center">
+          <i class="devicon-git-plain colored text-6xl transition-transform duration-300 group-hover:-translate-y-2"></i>
+          <span class="absolute -bottom-6 opacity-0 group-hover:opacity-100 transition duration-300 text-sm font-medium text-blue-400">Git</span>
+        </div>
+
       </div>
     </div>
 
   </div>
+
+  </div>
 </section>
+
+    <!-- MEUS PROJETOS -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+  <!-- CARD 1 -->
+  <div class="group bg-slate-900 rounded-2xl overflow-hidden 
+              transition duration-500 hover:-translate-y-3 
+              hover:shadow-[0_0_25px_#3b82f6]">
+
+    <div class="overflow-hidden">
+      <img alt="projeto" src="/public/assets/preview1.png" 
+           class="w-full h-48 object-cover transition duration-500 group-hover:scale-110">
+    </div>
+
+    <div class="p-6">
+      <h3 class="text-2xl font-semibold mb-3 text-blue-300">
+        Sistema de Login e Registro
+      </h3>
+
+      <p class="text-slate-400 mb-4">
+        Aplicação web de autenticação com validações e dark mode.
+      </p>
+
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">HTML</span>
+        <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">Tailwind</span>
+        <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">JavaScript</span>
+      </div>
+
+      <div class="flex gap-4">
+        <a href="#" class="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-500 transition">
+          Demo
+        </a>
+
+        <a href="https://github.com/catharinaab/login-register-project" class="border border-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="group bg-slate-900 rounded-2xl overflow-hidden 
+              transition duration-500 hover:-translate-y-3 
+              hover:shadow-[0_0_25px_#3b82f6]">
+
+    <div class="overflow-hidden">
+      <img alt="projeto" src="/public/assets/preview2.png" 
+           class="w-full h-48 object-cover transition duration-500 group-hover:scale-110">
+    </div>
+
+    <div class="p-6">
+      <h3 class="text-2xl font-semibold mb-3 text-blue-300">
+        Cardápio Digital de uma Cafeteria 
+      </h3>
+
+      <p class="text-slate-400 mb-4">
+        Descrição breve do seu segundo projeto.
+      </p>
+
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">React</span>
+        <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">Node</span>
+        <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">JavaScript</span>
+        <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">CSS</span>
+        <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">HTML</span>
+        
+      </div>
+
+      <div class="flex gap-4">
+        <a href="https://cafe-menu-mu-three.vercel.app" class="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-500 transition">
+          Demo
+        </a>
+
+        <a href="https://github.com/catharinaab/cafe-menu" class="border border-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+    <!-- CONTATO -->
+    <section id="contact" class="min-h-screen bg-zinc-950 text-white py-24 scroll-mt-24">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    
+    <h2 class="text-4xl font-bold mb-8">
+      <span>Vamos <span class="highlight">Conv</span>ersar<span class="highlight">?</span>
+    </h2>
+
+    <p class="text-gray-400 mb-12">
+      Estou aberta a oportunidades, estágios e projetos freelance.
+      Entre em contato comigo através das redes abaixo.
+    </p>
+
+<div class="flex justify-center gap-10 text-4xl">
+
+  <!-- GitHub -->
+<a href="https://github.com/catharinaab" target="_blank" rel="noopener"
+   class="group relative flex flex-col items-center text-6xl">
+
+  <i class="devicon-github-original 
+            transition-transform duration-300 
+            group-hover:-translate-y-1 group-hover:scale-110">
+  </i>
+
+  <span class="absolute -bottom-6 opacity-0 
+               text-sm text-blue-400 font-semibold
+               transition-all duration-300
+               group-hover:opacity-100">
+    GitHub
+  </span>
+</a>
+
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/catharina-bonella" target="_blank" rel="noopener"
+    class="group relative flex flex-col items-center text-6xl">
+
+    <i class="devicon-linkedin-plain 
+              transition-transform duration-300 
+              group-hover:-translate-y-1">
+    </i>
+
+    <span class="absolute -bottom-6 opacity-0 
+                 group-hover:opacity-100 
+                 transition duration-300 
+                 text-sm text-blue-400 font-semibold">
+      LinkedIn
+    </span>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:catharinabonella30@gmail.com"
+     class="group relative flex flex-col items-center text-6xl">
+
+    <i class="fa-solid fa-envelope 
+              transition-transform duration-300 
+              group-hover:-translate-y-1">
+    </i>
+
+    <span class="absolute -bottom-6 opacity-0 
+                 group-hover:opacity-100 
+                 transition duration-300 
+                 text-sm text-blue-400 font-semibold">
+      Email
+    </span>
+  </a>
+
+</div>
+
+  </div>
+</section>
+
+<footer class="bg-slate-950 text-center py-10 relative">
+
+  <p class="text-slate-400 text-sm">
+    © 2026 Catharina Alves Bonella. Todos os direitos reservados.
+  </p>
+
+  <!-- Botão voltar ao topo -->
+  <a href="#home"
+     class="absolute right-6 bottom-6 bg-blue-600 p-3 rounded-full 
+            hover:bg-blue-500 transition duration-300 
+            shadow-md hover:shadow-[0_0_10px_#3b82f6]">
+
+    <i class="fa-solid fa-arrow-up text-white"></i>
+  </a>
+
+</footer>
 
   <script type="module" src="/src/main.js"></script>
   </body>
